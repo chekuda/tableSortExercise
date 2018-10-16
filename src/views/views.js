@@ -1,0 +1,1 @@
+export const views = () => `<h1>THIS IS VIEWS</h1>`

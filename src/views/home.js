@@ -1,0 +1,1 @@
+export const home = () => `<h1>THIS IS HOME</h1>`
