@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import HomePage from './Page/HomePage'
+import HomeContainer from './Containers/HomeContainer'
 
-render(<HomePage />, document.getElementById('root'))
+render(<HomeContainer />, document.getElementById('root'))

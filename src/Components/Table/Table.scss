@@ -1,0 +1,11 @@
+  table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  tr:nth-child(even) {
+    background: #ccc;
+  }
+    td {
+      border: solid 1px #ccc;
+    }
+}
