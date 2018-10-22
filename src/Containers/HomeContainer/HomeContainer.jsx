@@ -16,9 +16,31 @@ class HomeContainer extends Component {
   componentDidMount(){
     this.getData()
   }
+  
+  sortByName(prev, next) {
+    return prev.first_name > next.first_name ? 1 : 0
+  }
+  sortByAge(prev, next) {
+    return new Date(prev.bday).toString() > new Date(next.bday).toString() ? 1 : 0
+  }
+
+  sortBy = ({ target }) => {
+    const { value } = target
+    const newArray = [...this.state.people]
+    console.log(value === 'name')
+    const currentDisplay = value === 'name'
+      ? newArray.sort(this.sortByName)
+      : newArray.sort(this.sortByAge)
+    this.setState({
+      people: currentDisplay
+    })
+  }
 
   render(){
-    return <HomePage people={this.state.people}/>
+    return <HomePage
+      people={this.state.people}
+      sortBy={this.sortBy}
+      />
   }
 }
 
