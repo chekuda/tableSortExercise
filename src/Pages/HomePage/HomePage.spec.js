@@ -33,5 +33,21 @@ describe('Home Page', () => {
         expect(component.find('Table').length).toBe(0)
       })
     })
+    describe('when click on sort by name', () => {
+      it('shortBy should be called', () => {
+        const shortBy = jest.fn()
+        const component = shallow(<HomePage shortBy={shortBy}/>)
+        component.find('.sort-name').simulate('click')
+        expect(shortBy).toHaveBeenCalled()
+      })
+    })
+    describe('when click on sort by age', () => {
+      it('shortBy should be called', () => {
+        const shortBy = jest.fn()
+        const component = shallow(<HomePage shortBy={shortBy}/>)
+        component.find('.sort-age').simulate('click')
+        expect(shortBy).toHaveBeenCalled()
+      })
+    })
   })
 })

@@ -4,7 +4,7 @@ import Table from '../../Components/Table'
 
 import './Homepage.scss'
 
-const HomePage = ({ people = [] }) =>
+const HomePage = ({ people = [], shortBy }) =>
   <div className='homepage-container'>
     <header className='title'>
       <h1>List of Users</h1>
@@ -12,11 +12,21 @@ const HomePage = ({ people = [] }) =>
     <div className='sort-section'>
       <div>
         <label>Name</label>
-        <input className='sort-name' type='radio' value='Name'/>
+        <input
+          className='sort-name'
+          type='radio'
+          value='name'
+          onClick={shortBy}
+        />
       </div>
       <div>
       <label>Age</label>
-      <input className='sort-age' type='radio' value='Age'/>
+      <input
+        className='sort-age'
+        type='radio'
+        value='Age'
+        onClick={shortBy}
+        />
       </div>
     </div>
     {
