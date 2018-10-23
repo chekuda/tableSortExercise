@@ -37,7 +37,7 @@ describe('HomeContainer', () => {
   })
   describe('when trying to fetch the data', () => {
     describe('and the data has been fetched', () => {
-      mockGet.mockImplementation(() => new Promise(resolve => resolve(JSON.stringify(mockProps.user.currentView))))
+      mockGet.mockImplementation(() => new Promise(resolve => resolve(JSON.stringify([]))))
       const component = shallow(<HomeContainer {...mockProps}/>)
       it('should save current view within the store', () => {
         expect(mockProps.saveView).toHaveBeenCalled()
@@ -48,7 +48,7 @@ describe('HomeContainer', () => {
     let component
     let newInstance
     beforeEach(() => {
-      mockGet.mockImplementation(() => new Promise(resolve => resolve(JSON.stringify(mockProps.user.currentView))))
+      mockGet.mockImplementation(() => new Promise(resolve => resolve(JSON.stringify([]))))
       component = shallow(<HomeContainer {...mockProps }/>)
       newInstance = component.instance()
     })
