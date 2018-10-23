@@ -4,7 +4,7 @@ import Table from '../../Components/Table'
 
 import './Homepage.scss'
 
-const HomePage = ({ people = [], sortBy }) =>
+const HomePage = ({ people = [], sortBy, sortEnabled }) =>
   <div className='homepage-container'>
     <header className='title'>
       <h1>List of Users</h1>
@@ -16,6 +16,7 @@ const HomePage = ({ people = [], sortBy }) =>
           className='sort-name'
           type='radio'
           value='name'
+          checked={sortEnabled === 'name'}
           onClick={sortBy}
         />
       </div>
@@ -25,6 +26,7 @@ const HomePage = ({ people = [], sortBy }) =>
           className='sort-age'
           type='radio'
           value='age'
+          checked={sortEnabled === 'age'}
           onClick={sortBy}
           />
       </div>

@@ -35,18 +35,18 @@ describe('Home Page', () => {
     })
     describe('when click on sort by name', () => {
       it('shortBy should be called', () => {
-        const shortBy = jest.fn()
-        const component = shallow(<HomePage shortBy={shortBy}/>)
+        const sortBy = jest.fn()
+        const component = shallow(<HomePage sortBy={sortBy}/>)
         component.find('.sort-name').simulate('click')
-        expect(shortBy).toHaveBeenCalled()
+        expect(sortBy).toHaveBeenCalled()
       })
     })
     describe('when click on sort by age', () => {
       it('shortBy should be called', () => {
-        const shortBy = jest.fn()
-        const component = shallow(<HomePage shortBy={shortBy}/>)
+        const sortBy = jest.fn()
+        const component = shallow(<HomePage sortBy={sortBy}/>)
         component.find('.sort-age').simulate('click')
-        expect(shortBy).toHaveBeenCalled()
+        expect(sortBy).toHaveBeenCalled()
       })
     })
   })

@@ -39,45 +39,5 @@ export default () => (
     "id": 10,
     "first_name": "Allix",
     "bday": "08/16/2018"
-  }, {
-    "id": 11,
-    "first_name": "Kenon",
-    "bday": "10/22/2017"
-  }, {
-    "id": 12,
-    "first_name": "Justen",
-    "bday": "04/22/2018"
-  }, {
-    "id": 13,
-    "first_name": "Launce",
-    "bday": "03/31/2018"
-  }, {
-    "id": 14,
-    "first_name": "Elston",
-    "bday": "05/17/2018"
-  }, {
-    "id": 15,
-    "first_name": "Elisa",
-    "bday": "04/24/2018"
-  }, {
-    "id": 16,
-    "first_name": "Consuelo",
-    "bday": "09/06/2018"
-  }, {
-    "id": 17,
-    "first_name": "Giacopo",
-    "bday": "04/18/2018"
-  }, {
-    "id": 18,
-    "first_name": "Ole",
-    "bday": "06/30/2018"
-  }, {
-    "id": 19,
-    "first_name": "Karyn",
-    "bday": "01/05/2018"
-  }, {
-    "id": 20,
-    "first_name": "Nessy",
-    "bday": "08/04/2018"
   }]
 )
